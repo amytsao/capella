@@ -4,12 +4,11 @@ import { buildImageObj } from '../lib/helpers'
 import { imageUrlFor } from '../lib/image-url'
 import BlockContent from './block-content'
 import Container from './container'
-import RoleList from './role-list'
 
 import styles from './news-post.module.css'
 
 function NewsPost (props) {
-  const { _rawBody, authors, categories, title, mainImage, publishedAt } = props
+  const { _rawBody, categories, title, mainImage, publishedAt } = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -38,7 +37,6 @@ function NewsPost (props) {
                   : format(new Date(publishedAt), 'MMMM Do YYYY')}
               </div>
             )}
-            {authors && <RoleList items={authors} title='Authors' />}
             {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>

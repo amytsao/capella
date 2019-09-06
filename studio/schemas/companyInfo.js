@@ -1,4 +1,4 @@
-import { MdBusiness } from 'react-icons/md'
+import { MdBusiness } from 'react-icons/md';
 
 export default {
   name: 'companyInfo',

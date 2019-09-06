@@ -10,7 +10,7 @@ import { responsiveTitle1 } from '../components/typography.module.css'
 
 export const query = graphql`
   query ApplicationPageQuery {
-    page: sanityPage(_id: { regex: "/(drafts.|)application/" }) {
+    page: sanityPage(title: { eq: "Credit Application" }) {
       title
       _rawBody
     }

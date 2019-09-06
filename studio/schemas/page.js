@@ -15,7 +15,7 @@ export default {
       title: 'Route',
       type: 'reference',
       to: [{ type: 'route' }],
-      validation: Rule => Rule.required(),
+      validation: Rule => Rule.required()
     },
     {
       name: 'body',

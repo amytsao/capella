@@ -8,7 +8,7 @@ import styles from './header.module.css'
 
 const headerCss = css`
   background: #ccc;
-`;
+`
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div css={headerCss} className={styles.root}>
@@ -31,6 +31,9 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           </li>
           <li>
             <Link to='/news/'>News</Link>
+          </li>
+          <li>
+            <Link to='/products/'>Products</Link>
           </li>
           <li>
             <Link to='/terms/'>Terms and Conditions</Link>
